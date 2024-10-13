@@ -2,7 +2,9 @@ package com.allen.springbootmall.model;
 
 import com.allen.springbootmall.constant.ProductCategory;
 
+import java.sql.Timestamp;
 import java.util.Date;
+
 
 public class Product {
     private Integer productId;
@@ -12,8 +14,8 @@ public class Product {
     private Integer price;
     private Integer stock;
     private String description;
-    private Date createDate;
-    private Date lastModifiedDate;
+    private Timestamp createDate; //Date無法印出時間
+    private Timestamp lastModifiedDate;
 
     public Integer getProductId() {
         return productId;
@@ -71,11 +73,11 @@ public class Product {
         this.description = description;
     }
 
-    public Date getCreateDate() {
+    public Timestamp getCreateDate() {
         return createDate;
     }
 
-    public void setCreateDate(Date createDate) {
+    public void setCreateDate(Timestamp createDate) {
         this.createDate = createDate;
     }
 
@@ -83,7 +85,9 @@ public class Product {
         return lastModifiedDate;
     }
 
-    public void setLastModifiedDate(Date lastModifiedDate) {
+    public void setLastModifiedDate(Timestamp lastModifiedDate) {
         this.lastModifiedDate = lastModifiedDate;
+
     }
+
 }

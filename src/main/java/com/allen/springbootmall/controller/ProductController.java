@@ -2,12 +2,12 @@ package com.allen.springbootmall.controller;
 
 
 import com.allen.springbootmall.constant.ProductCategory;
+import com.allen.springbootmall.dto.ProdcutQueryParams;
 import com.allen.springbootmall.dto.ProductRequest;
 import com.allen.springbootmall.model.Product;
 import com.allen.springbootmall.service.ProductService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,10 +23,14 @@ public class ProductController {
     //所有商品列表
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getProducts(
-            @RequestParam(required = false)   ProductCategory category, //非必要數值
+            @RequestParam(required = false) ProductCategory category, //非必要數值
             @RequestParam(required = false) String search
     ) {
-        List<Product> productList = productService.getProducts(category,search);
+        ProdcutQueryParams prodcutQueryParams = new ProdcutQueryParams();
+        prodcutQueryParams.setCategory(category);
+        prodcutQueryParams.setSearch(search);
+
+        List<Product> productList = productService.getProducts(prodcutQueryParams);
 
         return ResponseEntity.status(HttpStatus.OK).body(productList);
     }

@@ -1,7 +1,7 @@
 package com.allen.springbootmall.dao.impl;
 
-import com.allen.springbootmall.constant.ProductCategory;
 import com.allen.springbootmall.dao.ProductDao;
+import com.allen.springbootmall.dto.ProdcutQueryParams;
 import com.allen.springbootmall.dto.ProductRequest;
 import com.allen.springbootmall.model.Product;
 import com.allen.springbootmall.rowmapper.ProductRowMapper;
@@ -24,21 +24,21 @@ public class ProductDaoImpl implements ProductDao {
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Override
-    public List<Product> getProducts(ProductCategory category,String search) {
+    public List<Product> getProducts(ProdcutQueryParams prodcutQueryParams) {
         String sql = "SELECT product_id,product_name, category, image_url, price, " +
                 "stock, description, created_date, last_modified_date " +
                 "FROM product WHERE 1=1";// 1 = 1, 組合下方的SQL語句
 
         Map<String, Object> map = new HashMap<>();
 
-        if(category != null) {
+        if(prodcutQueryParams.getCategory() != null) {
             sql = sql + " AND category=:category";
-            map.put("category", category.name()); //轉成字串
+            map.put("category", prodcutQueryParams.getCategory().name()); //轉成字串
         }
 
-        if(search != null) {
+        if(prodcutQueryParams.getSearch() != null) {
             sql = sql + " AND product_name LIKE :search";
-            map.put("search","%" + search + "%");
+            map.put("search","%" + prodcutQueryParams.getSearch() + "%");
         }
 
         List<Product> productList = namedParameterJdbcTemplate.query(sql, map, new ProductRowMapper());

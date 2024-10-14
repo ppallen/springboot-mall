@@ -7,13 +7,17 @@ import com.allen.springbootmall.dto.ProductRequest;
 import com.allen.springbootmall.model.Product;
 import com.allen.springbootmall.service.ProductService;
 import jakarta.validation.Valid;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Validated
 @RestController
 public class ProductController {
 
@@ -29,13 +33,20 @@ public class ProductController {
 
             //排序 Sorting
             @RequestParam(defaultValue = "created_date") String orderBy, //根據欄位排序
-            @RequestParam(defaultValue = "desc") String sort  //升(asc)或降(desc)序
+            @RequestParam(defaultValue = "desc") String sort, //升(asc)或降(desc)序
+
+            //分頁 Pagination
+            @RequestParam(defaultValue = "5") @Max(1000) @Min(0) Integer limit, //取得幾筆數據->SQL LIMIT
+            @RequestParam(defaultValue = "0") @Min(0) Integer offset //跳過多少數據->SQL OFFSET
     ) {
+        //設置參數
         ProdcutQueryParams prodcutQueryParams = new ProdcutQueryParams();
         prodcutQueryParams.setCategory(category);
         prodcutQueryParams.setSearch(search);
         prodcutQueryParams.setOrderBy(orderBy);
         prodcutQueryParams.setSort(sort);
+        prodcutQueryParams.setLimit(limit);
+        prodcutQueryParams.setOffset(offset);
 
         List<Product> productList = productService.getProducts(prodcutQueryParams);
 

@@ -1,6 +1,7 @@
 package com.allen.springbootmall.controller;
 
 
+import com.allen.springbootmall.constant.ProductCategory;
 import com.allen.springbootmall.dto.ProductRequest;
 import com.allen.springbootmall.model.Product;
 import com.allen.springbootmall.service.ProductService;
@@ -21,8 +22,11 @@ public class ProductController {
 
     //所有商品列表
     @GetMapping("/products")
-    public ResponseEntity<List<Product>> getProducts() {
-        List<Product> productList = productService.getProducts();
+    public ResponseEntity<List<Product>> getProducts(
+            @RequestParam(required = false)   ProductCategory category, //非必要數值
+            @RequestParam(required = false) String search
+    ) {
+        List<Product> productList = productService.getProducts(category,search);
 
         return ResponseEntity.status(HttpStatus.OK).body(productList);
     }

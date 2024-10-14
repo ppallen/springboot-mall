@@ -9,7 +9,7 @@ public class MyTest {
 
         String s2 = "CAR";
         ProductCategory category2 = ProductCategory.valueOf(s2);//確認Category2是否存在s2的字串
-
+        System.out.println(category2);
 
     }
 

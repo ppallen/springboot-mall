@@ -23,7 +23,7 @@
 
 獲取所有資料(GET method)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a8306191-4a20-49b0-b04a-45c08be877ad/e9b17857-89e3-473b-aaa9-e83ae9251db0/image.png)
+![image.png](https://drive.google.com/file/d/1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw/view?usp=drive_link)
 
 新增資料(POST method)
 

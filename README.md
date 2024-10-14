@@ -23,7 +23,7 @@
 
 獲取所有資料(GET method)
 
-![image.png](https://drive.google.com/file/d/1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw/view?usp=drive_link)
+![image.png](https://drive.google.com/uc?id=1Pn8_wWoU37aWSGOiyzgqmwk4UT33WD87)
 
 新增資料(POST method)
 

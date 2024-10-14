@@ -26,7 +26,7 @@
 ![image.png](https://drive.google.com/uc?id=1Pn8_wWoU37aWSGOiyzgqmwk4UT33WD87)
 
 新增資料(POST method)
-![image.png](https://drive.google.com/uc?id=1FVSPDg0i2QPVqoSkKW3WLW4fTz1ixK3-)
+![image.png](https://drive.google.com/uc?id=1FVSPDg0i2QPVqoSkKW3WLW4fTz1ixK3)
 
 刪除資料(Delete method)
 ![image.png](https://drive.google.com/uc?id=19bHm44d7sn3VwXqLW-9ifKwrNrxPO6p7)

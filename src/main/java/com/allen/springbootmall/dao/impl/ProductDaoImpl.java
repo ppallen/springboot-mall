@@ -41,6 +41,9 @@ public class ProductDaoImpl implements ProductDao {
             map.put("search","%" + prodcutQueryParams.getSearch() + "%");
         }
 
+        sql = sql + " ORDER BY " + prodcutQueryParams.getOrderBy() +
+                " " + prodcutQueryParams.getSort(); //不必檢查，因為在controller有使用 defaultValue
+
         List<Product> productList = namedParameterJdbcTemplate.query(sql, map, new ProductRowMapper());
 
         return productList;

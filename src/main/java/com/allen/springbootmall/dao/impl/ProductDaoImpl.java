@@ -43,14 +43,13 @@ public class ProductDaoImpl implements ProductDao {
 
         Map<String, Object> map = new HashMap<>();
 
-        //查詢條件 category
-        if(prodcutQueryParams.getCategory() != null) {
-            sql = sql + " AND category=:category";
-            map.put("category", prodcutQueryParams.getCategory().name()); //轉成字串
-        }
-
         //查詢條件
         sql = addFilterSql(sql,map,prodcutQueryParams);
+
+        //orderBy sort
+        sql = sql + " ORDER BY " + prodcutQueryParams.getOrderBy() +
+                " " + prodcutQueryParams.getSort();
+
 
         //分頁 Limit , offset
         sql = sql + " LIMIT :limit OFFSET :offset";

@@ -14,7 +14,7 @@ public class Product {
     private Integer price;
     private Integer stock;
     private String description;
-    private Timestamp createDate; //Date無法印出時間
+    private Timestamp createdDate; //Date無法印出時間
     private Timestamp lastModifiedDate;
 
     public Integer getProductId() {
@@ -73,12 +73,12 @@ public class Product {
         this.description = description;
     }
 
-    public Timestamp getCreateDate() {
-        return createDate;
+    public Timestamp getCreatedDate() {
+        return createdDate;
     }
 
-    public void setCreateDate(Timestamp createDate) {
-        this.createDate = createDate;
+    public void setCreatedDate(Timestamp createdDate) {
+        this.createdDate = createdDate;
     }
 
     public Date getLastModifiedDate() {

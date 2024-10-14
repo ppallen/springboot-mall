@@ -28,17 +28,8 @@ public class ProductDaoImpl implements ProductDao {
         String sql =  "SELECT count(*) FROM product WHERE 1=1";
         Map<String,Object> map = new HashMap<>();
 
-        //查詢條件 category
-        if(prodcutQueryParams.getCategory() != null) {
-            sql = sql + " AND category=:category";
-            map.put("category", prodcutQueryParams.getCategory().name()); //轉成字串
-        }
-
-        //查詢條件 search
-        if(prodcutQueryParams.getSearch() != null) {
-            sql = sql + " AND product_name LIKE :search";
-            map.put("search","%" + prodcutQueryParams.getSearch() + "%");
-        }
+        //查詢條件
+        sql = addFilterSql(sql,map,prodcutQueryParams);
 
         Integer total = namedParameterJdbcTemplate.queryForObject(sql, map, Integer.class);
         return total;
@@ -58,14 +49,8 @@ public class ProductDaoImpl implements ProductDao {
             map.put("category", prodcutQueryParams.getCategory().name()); //轉成字串
         }
 
-        //查詢條件 search
-        if(prodcutQueryParams.getSearch() != null) {
-            sql = sql + " AND product_name LIKE :search";
-            map.put("search","%" + prodcutQueryParams.getSearch() + "%");
-        }
-        //排序 orderBy sort
-        sql = sql + " ORDER BY " + prodcutQueryParams.getOrderBy() +
-                " " + prodcutQueryParams.getSort(); //不必檢查，因為在controller有使用 defaultValue
+        //查詢條件
+        sql = addFilterSql(sql,map,prodcutQueryParams);
 
         //分頁 Limit , offset
         sql = sql + " LIMIT :limit OFFSET :offset";
@@ -154,6 +139,22 @@ public class ProductDaoImpl implements ProductDao {
 
         namedParameterJdbcTemplate.update(sql,map);
 
+    }
+
+    private String addFilterSql(String sql,Map<String, Object> map,
+                                ProdcutQueryParams prodcutQueryParams) {
+        //查詢條件 category
+        if(prodcutQueryParams.getCategory() != null) {
+            sql = sql + " AND category=:category";
+            map.put("category", prodcutQueryParams.getCategory().name()); //轉成字串
+        }
+
+        //查詢條件 search
+        if(prodcutQueryParams.getSearch() != null) {
+            sql = sql + " AND product_name LIKE :search";
+            map.put("search","%" + prodcutQueryParams.getSearch() + "%");
+        }
+        return sql;
     }
 
 

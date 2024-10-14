@@ -26,13 +26,10 @@
 ![image.png](https://drive.google.com/uc?id=1Pn8_wWoU37aWSGOiyzgqmwk4UT33WD87)
 
 新增資料(POST method)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a8306191-4a20-49b0-b04a-45c08be877ad/2221fcba-dea8-405d-92e0-89ca91ee5cb5/image.png)
+![image.png](https://drive.google.com/uc?id=1FVSPDg0i2QPVqoSkKW3WLW4fTz1ixK3-)
 
 刪除資料(Delete method)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a8306191-4a20-49b0-b04a-45c08be877ad/55eeca9b-1d72-4a5f-bf78-b47cd0957b85/image.png)
+![image.png](https://drive.google.com/uc?id=19bHm44d7sn3VwXqLW-9ifKwrNrxPO6p7)
 
 修改資料( Put method)
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a8306191-4a20-49b0-b04a-45c08be877ad/bfabe72c-76a4-440b-a4bc-be21ba93d06a/image.png)
+![image.png](https://drive.google.com/uc?id=1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw)

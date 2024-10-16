@@ -1,11 +1,19 @@
 package com.allen.springbootmall.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.sql.Timestamp;
 
 public class User {
     private Integer userId;
+
+    @JsonProperty("e_mail")
     private String email;
+
+    @JsonIgnore
     private String password;
+
     private Timestamp createDate;
     private Timestamp lastModifiedDate;
 

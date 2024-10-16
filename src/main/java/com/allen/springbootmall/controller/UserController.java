@@ -1,5 +1,6 @@
 package com.allen.springbootmall.controller;
 
+import com.allen.springbootmall.dto.UserLoginRequest;
 import com.allen.springbootmall.dto.UserRegisterRequest;
 import com.allen.springbootmall.model.User;
 import com.allen.springbootmall.service.UserService;
@@ -25,9 +26,13 @@ public class UserController {
         Integer userId =  userService.register(userRegisterRequest);
         //取得
         User user  = userService.getUserById(userId);
-
         return ResponseEntity.status(HttpStatus.CREATED).body(user);
+    }
 
+    @PostMapping("/users/login")
+    public ResponseEntity<User> login(@RequestBody @Valid UserLoginRequest userLoginRequest) {
+        User user = userService.login(userLoginRequest);
+        return ResponseEntity.status(HttpStatus.OK).body(user);
     }
 
 

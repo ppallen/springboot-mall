@@ -37,8 +37,6 @@ public class UserServiceImpl implements UserService {
         String hashPassword = DigestUtils.md5DigestAsHex(
                 userLoginRequest.getPassword().getBytes());
 
-
-
         //比較密碼
         if(user.getPassword().equals(hashPassword)){
             return ResponseEntity.ok().body(user).getBody();
@@ -47,11 +45,7 @@ public class UserServiceImpl implements UserService {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
         }
 
-
-
     }
-
-
 
 
     @Override

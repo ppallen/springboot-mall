@@ -47,6 +47,9 @@ public class OrderDaoImpl implements OrderDao {
         sql = addFilterSql(sql,map,orderQueryParams);
 
         //排序
+        sql = sql + " ORDER BY created_date DESC";
+
+        //分頁
         sql = sql + " LIMIT :limit OFFSET :offset";
         map.put("limit",orderQueryParams.getLimit());
         map.put("offset",orderQueryParams.getOffset());

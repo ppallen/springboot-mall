@@ -33,3 +33,24 @@
 
 修改資料( Put method)
 ![image.png](https://drive.google.com/uc?id=1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw)
+
+
+# 未來擴展
+
+## 商品功能
+
+- 優化查詢列表效率
+    - Elastic Search
+- 權限管理RBAC
+    - 不是所有人可以更新、刪除product
+- price用Decimal類型儲存，非INT
+
+## 帳號功能
+
+- 每個api的token認證
+
+## 訂單功能
+
+- 如何解決搶票問題?多人搶單如何解決?
+- 狀態問題，如何處理訂單物流狀態?訂單退款
+- 怎麼串流金流?

@@ -24,6 +24,19 @@ public class ProductDaoImpl implements ProductDao {
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Override
+    public void updateStock(Integer productId, Integer stock) {
+        String sql = "UPDATE product SET stock = :stock, last_modified_date = :lastModifiedDate " +
+                "WHERE product_id = :productId";
+        Map<String, Object> map = new HashMap<>();
+        map.put("productId", productId);
+        map.put("stock", stock);
+        map.put("lastModifiedDate", new Timestamp(System.currentTimeMillis()));
+        namedParameterJdbcTemplate.update(sql, map);
+
+
+    }
+
+    @Override
     public Integer countProducts(ProdcutQueryParams prodcutQueryParams) {
         String sql =  "SELECT count(*) FROM product WHERE 1=1";
         Map<String,Object> map = new HashMap<>();

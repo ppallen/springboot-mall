@@ -1,6 +1,7 @@
 package com.allen.springbootmall.model;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 public class Order {
     private Integer orderId;
@@ -8,6 +9,16 @@ public class Order {
     private Integer totalAmount;
     private Timestamp createdDate;
     private Timestamp lastModifiedDate;
+
+    private List<OrderItem> orderItemList;
+
+    public List<OrderItem> getOrderItemList() {
+        return orderItemList;
+    }
+
+    public void setOrderItemList(List<OrderItem> orderItemList) {
+        this.orderItemList = orderItemList;
+    }
 
     public Integer getOrderId() {
         return orderId;

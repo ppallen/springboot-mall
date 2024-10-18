@@ -31,7 +31,7 @@
 刪除資料(Delete method)
 ![image.png](https://drive.google.com/uc?id=19bHm44d7sn3VwXqLW-9ifKwrNrxPO6p7)
 
-修改資料( Put method)
+修改資料(Put method)
 ![image.png](https://drive.google.com/uc?id=1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw)
 
 
@@ -54,3 +54,14 @@
 - 如何解決搶票問題?多人搶單如何解決?
 - 狀態問題，如何處理訂單物流狀態?訂單退款
 - 怎麼串流金流?
+
+
+## 前端設計
+－技術 React+Vite 呈現後端Spring Boot是否架設成功
+
+登入畫面
+![image.png](https://drive.google.com/uc?id=1JRFfuFYAt_TZ9eoe8G49oOYAs14vGdju)
+
+註冊畫面
+![image.png](https://drive.google.com/uc?id=1TSUlSLVZBmqr8HCXgqC9yoZgSZrsTF_Y)
+

@@ -5,7 +5,7 @@ import com.allen.springbootmall.dto.UserRegisterRequest;
 import com.allen.springbootmall.model.User;
 
 public interface UserService {
-    User login(UserLoginRequest userLoginRequest);
+    String login(UserLoginRequest userLoginRequest);
 
     User getUserById(Integer userId);
 

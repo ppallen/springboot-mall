@@ -13,6 +13,17 @@ public class UserRegisterRequest {
     @NotBlank
     private String password;
 
+    @NotBlank
+    private String authority;
+
+    public String getAuthority() {
+        return authority;
+    }
+
+    public void setAuthority(@NotBlank String authority) {
+        this.authority = authority;
+    }
+
     public String getEmail() {
         return email;
     }

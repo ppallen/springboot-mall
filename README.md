@@ -35,7 +35,8 @@
 修改資料(Put method)
 ![image.png](https://drive.google.com/uc?id=1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw)
 
-#前端React展示 uc?id=
+# 前端React展示 
+
 主畫面
 ![image.png](https://drive.google.com/uc?id=1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
 

@@ -35,9 +35,21 @@
 修改資料(Put method)
 ![image.png](https://drive.google.com/uc?id=1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw)
 
-#前端React展示
+#前端React展示 uc?id=
 主畫面
 ![image.png](https://drive.google.com/uc?id=1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
+
+電商首頁
+![image.png](https://drive.google.com/uc?id=18m6OzjCI1uJlH3tXf4N56MVLqikvmK9l)
+
+購物車
+![image.png](https://drive.google.com/uc?id=1kJJmkNT5mtLpOdzir-3gPfv1fsxgak0w)
+
+訂單紀錄
+![image.png](https://drive.google.com/uc?id=16czXAAiL9pVMzBfgEf8rbiZFk9qzW7VZ)
+
+個人資料
+![image.png](https://drive.google.com/uc?id=1_KQaFAGUlQ_K4swNHM2oG0asKuJGlfWV)
 
 # 未來擴展
 

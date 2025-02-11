@@ -37,7 +37,7 @@
 
 #前端React展示
 主畫面
-![image.png](https://drive.google.com/uc?1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
+![image.png](https://drive.google.com/uc?id=1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
 
 # 未來擴展
 

@@ -28,6 +28,7 @@
 新增資料(POST method)
 ![image.png](https://drive.google.com/uc?id=1FVSPDg0i2QPVqoSkKW3WLW4fTz1ixK3-)
 
+
 刪除資料(Delete method)
 ![image.png](https://drive.google.com/uc?id=19bHm44d7sn3VwXqLW-9ifKwrNrxPO6p7)
 
@@ -36,7 +37,7 @@
 
 #前端React展示
 主畫面
-![image.png](https://drive.google.com/file/d/1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
+![image.png](https://drive.google.com/uc?1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
 
 # 未來擴展
 

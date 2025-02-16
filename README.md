@@ -19,39 +19,6 @@
     - 查詢訂單
 - 單元測試與Git版本控制
 
-# 實體照片
-
-獲取所有資料(GET method)
-
-![image.png](https://drive.google.com/uc?id=1Pn8_wWoU37aWSGOiyzgqmwk4UT33WD87)
-
-新增資料(POST method)
-![image.png](https://drive.google.com/uc?id=1FVSPDg0i2QPVqoSkKW3WLW4fTz1ixK3-)
-
-
-刪除資料(Delete method)
-![image.png](https://drive.google.com/uc?id=19bHm44d7sn3VwXqLW-9ifKwrNrxPO6p7)
-
-修改資料(Put method)
-![image.png](https://drive.google.com/uc?id=1eykrMSjYXMFl619DAap2Ci4wZrq2j7Dw)
-
-# 前端React展示 
-
-主畫面
-![image.png](https://drive.google.com/uc?id=1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
-
-電商首頁
-![image.png](https://drive.google.com/uc?id=18m6OzjCI1uJlH3tXf4N56MVLqikvmK9l)
-
-購物車
-![image.png](https://drive.google.com/uc?id=1kJJmkNT5mtLpOdzir-3gPfv1fsxgak0w)
-
-訂單紀錄
-![image.png](https://drive.google.com/uc?id=16czXAAiL9pVMzBfgEf8rbiZFk9qzW7VZ)
-
-個人資料
-![image.png](https://drive.google.com/uc?id=1_KQaFAGUlQ_K4swNHM2oG0asKuJGlfWV)
-
 # 未來擴展
 
 ## 商品功能
@@ -73,12 +40,21 @@
 - 怎麼串流金流?
 
 
-## 前端設計
-－技術 React+Vite 呈現後端Spring Boot是否架設成功
+# 前端React展示 
 
-登入畫面
-![image.png](https://drive.google.com/uc?id=1JRFfuFYAt_TZ9eoe8G49oOYAs14vGdju)
+主畫面
+![image.png](https://drive.google.com/uc?id=1V29k7_LCm_hZAL51uLBazhJPfXglQEdo)
 
-註冊畫面
-![image.png](https://drive.google.com/uc?id=1TSUlSLVZBmqr8HCXgqC9yoZgSZrsTF_Y)
+電商首頁
+![image.png](https://drive.google.com/uc?id=18m6OzjCI1uJlH3tXf4N56MVLqikvmK9l)
+
+購物車
+![image.png](https://drive.google.com/uc?id=1kJJmkNT5mtLpOdzir-3gPfv1fsxgak0w)
+
+訂單紀錄
+![image.png](https://drive.google.com/uc?id=16czXAAiL9pVMzBfgEf8rbiZFk9qzW7VZ)
+
+個人資料
+![image.png](https://drive.google.com/uc?id=1_KQaFAGUlQ_K4swNHM2oG0asKuJGlfWV)
+
 
